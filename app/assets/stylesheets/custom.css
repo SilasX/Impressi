@@ -518,7 +518,17 @@ h1 {
 	width: 450px;
 	position: relative;
 	left: 60%;
+	margin-right:2%;
 	margin-top: 100px;
+}
+
+.two {
+	display:inline-block;
+	opacity:0.5
+}
+
+.hide {
+	display:none;
 }
 
 #separator {
@@ -609,6 +619,8 @@ ul li {
 	color: #999;
 	font-family: Tahoma, Geneva, sans-serif;
   position: absolute;
+	right:53%;
+	top:100%;
 }
 
 #top-bar {

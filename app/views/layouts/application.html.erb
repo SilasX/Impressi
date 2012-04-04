@@ -23,9 +23,17 @@
 		<%= yield %>
 	</div>
 	
-  <div class='footer'>Impressi is open-source software. Please <a href='http://github.com/devbootcamp/impressi'>contribute</a>.</div>
+  <div class='footer three columns omega'>
+		Impressi is open-source software. Please <a href='http://github.com/devbootcamp/impressi'>contribute</a>.
+	</div>
+	
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  <script type="text/javascript">
+  <script>
+		window.onresize = function(e) {
+			(window.innerWidth < 1120)  ? $('div.two').addClass('hide') : $('div.two').removeClass('hide');
+		};
+	</script>
+	<script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-30581215-1']);
       _gaq.push(['_setDomainName', 'impressi.me']);

@@ -1,6 +1,7 @@
 var pickleLoaded = true;
 
 $(document).ready(function() {
+		alert(window);
 	var hover = 1;
 	var hints = true;
   var deck_id = $('#impress').attr('deck_id');
@@ -106,6 +107,15 @@ var establishEventListeners = function() {
         $('.editable.active').click();
     }
 	});
+
+	$(window).on('resize', function() {
+		console.log($(window));
+		console.log($(window).width());
+		if($(window).width() < 960) {
+			console.log($(this).width);
+			$('div.two').toggleClass('.hide');
+		}
+	});
 }
 
 var	markdown_to_html = function(string) {
@@ -153,9 +163,9 @@ var createInlineEditor = function() {
 		inlineEditor.prop('wrap', 'HARD');
 
 		var divbox = document.createElement('div'),
-            hoverbox = $(divbox);
+        hoverbox = $(divbox);
         
-        hoverbox.text('Click to add text')
+				hoverbox.text('Click to add text')
         hoverbox.attr('id', 'hoverbox');
         hoverbox.attr('class', 'editor');
 
