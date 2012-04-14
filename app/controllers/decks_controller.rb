@@ -15,7 +15,6 @@ class DecksController < ApplicationController
   def create
     deck = current_or_guest_user.decks.create(:template_id => 1)
     session[:guest_deck] = deck.id
-    puts "******** #{session[:guest_deck]}"
     redirect_to edit_deck_path(deck)
   end
   

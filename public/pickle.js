@@ -1,7 +1,7 @@
 var pickleLoaded = true;
 
 $(document).ready(function() {
-		alert(window);
+
 	var hover = 1;
 	var hints = true;
   var deck_id = $('#impress').attr('deck_id');
