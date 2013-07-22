@@ -15,10 +15,10 @@ group :assets do
 end
 
 group :production do
-	gem 'pg'
+  gem 'pg'
 end
 
 group :test, :development do
   gem "rspec-rails", "~> 2.6"
-	gem 'sqlite3'
+  gem 'sqlite3'
 end
