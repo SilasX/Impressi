@@ -13,13 +13,17 @@ Originally built by:
 
 == How to set up and run locally
 
-1) clone the repo  
+1) clone the repo
+
 2) make sure the required ruby version is installed
+
 3) Install required gems: `bundle install`
+
 4) Set up and seed database:
     rake db:setup
     rake db:seed
-5) Launch server: `rails s`
+5) Launch server:
+    rails s
 
 == What Does It Do
 
